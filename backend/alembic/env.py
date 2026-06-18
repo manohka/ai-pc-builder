@@ -7,6 +7,9 @@ from alembic import context
 
 from app.database.database import Base
 from app.models.component import Component
+from app.models.component_alias import ComponentAlias
+from app.models.component_spec import ComponentSpec
+from app.models.recommendation_rule import RecommendationRule
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.

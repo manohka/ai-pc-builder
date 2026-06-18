@@ -1,0 +1,18 @@
+[
+  {
+    "source_component_type": "GPU",
+    "source_tier": 3,
+    "target_component_type": "CPU",
+    "min_target_tier": 3,
+    "max_target_tier": 4,
+    "build_profile": "BALANCED"
+  },
+  {
+    "source_component_type": "GPU",
+    "source_tier": 4,
+    "target_component_type": "CPU",
+    "min_target_tier": 4,
+    "max_target_tier": 5,
+    "build_profile": "BALANCED"
+  }
+]

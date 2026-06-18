@@ -9,6 +9,8 @@ from sqlalchemy import String
 
 from sqlalchemy.dialects.postgresql import UUID
 
+from sqlalchemy.orm import relationship
+
 from app.database.database import Base
 
 
@@ -23,7 +25,8 @@ class Component(Base):
 
     name = Column(
         String(200),
-        nullable=False
+        nullable=False,
+        unique=True
     )
 
     component_type = Column(
@@ -60,4 +63,9 @@ class Component(Base):
     updated_at = Column(
         DateTime,
         nullable=True
+    )
+
+    aliases = relationship(
+        "ComponentAlias",
+        backref="component"
     )

@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Ryzen 5 7600",
+    "component_type": "CPU",
+    "brand": "AMD",
+    "tier": 3,
+    "price": 199.99
+  },
+  {
+    "name": "Ryzen 7 7700",
+    "component_type": "CPU",
+    "brand": "AMD",
+    "tier": 4,
+    "price": 299.99
+  },
+  {
+    "name": "RTX 5060 8GB",
+    "component_type": "GPU",
+    "brand": "NVIDIA",
+    "tier": 3,
+    "price": 299.99
+  },
+  {
+    "name": "MSI B650 Tomahawk",
+    "component_type": "MOTHERBOARD",
+    "brand": "MSI",
+    "tier": 3,
+    "price": 189.99
+  },
+  {
+    "name": "MSI B550 Gaming Plus",
+    "component_type": "MOTHERBOARD",
+    "brand": "MSI",
+    "tier": 3,
+    "price": 149.99
+  },
+  {
+    "name": "Corsair Vengeance DDR5 32GB",
+    "component_type": "RAM",
+    "brand": "Corsair",
+    "tier": 3,
+    "price": 119.99
+  },
+  {
+    "name": "Corsair Vengeance DDR4 16GB",
+    "component_type": "RAM",
+    "brand": "Corsair",
+    "tier": 2,
+    "price": 69.99
+  },
+  {
+    "name": "Corsair RM650e",
+    "component_type": "PSU",
+    "brand": "Corsair",
+    "tier": 3,
+    "price": 99.99
+  },
+  {
+    "name": "Corsair RM750e",
+    "component_type": "PSU",
+    "brand": "Corsair",
+    "tier": 4,
+    "price": 129.99
+  }
+]

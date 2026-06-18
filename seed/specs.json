@@ -1,0 +1,52 @@
+[
+  {
+    "component_name": "Ryzen 5 7600",
+    "spec_key": "socket",
+    "spec_value": "AM5"
+  },
+  {
+    "component_name": "Ryzen 5 7600",
+    "spec_key": "memory_type",
+    "spec_value": "DDR5"
+  },
+  {
+    "component_name": "Ryzen 7 7700",
+    "spec_key": "socket",
+    "spec_value": "AM5"
+  },
+  {
+    "component_name": "Ryzen 7 7700",
+    "spec_key": "memory_type",
+    "spec_value": "DDR5"
+  },
+  {
+    "component_name": "MSI B650 Tomahawk",
+    "spec_key": "socket",
+    "spec_value": "AM5"
+  },
+  {
+    "component_name": "MSI B650 Tomahawk",
+    "spec_key": "memory_type",
+    "spec_value": "DDR5"
+  },
+  {
+    "component_name": "MSI B550 Gaming Plus",
+    "spec_key": "socket",
+    "spec_value": "AM4"
+  },
+  {
+    "component_name": "MSI B550 Gaming Plus",
+    "spec_key": "memory_type",
+    "spec_value": "DDR4"
+  },
+  {
+    "component_name": "Corsair Vengeance DDR5 32GB",
+    "spec_key": "memory_type",
+    "spec_value": "DDR5"
+  },
+  {
+    "component_name": "Corsair Vengeance DDR4 16GB",
+    "spec_key": "memory_type",
+    "spec_value": "DDR4"
+  }
+]
