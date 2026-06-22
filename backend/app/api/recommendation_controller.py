@@ -1,11 +1,13 @@
+from typing import List
+
 from fastapi import APIRouter
 
 from app.schemas.recommendation_request import (
     RecommendationRequest
 )
 
-from app.schemas.recommendation_response import (
-    RecommendationResponse
+from app.schemas.build_response import (
+    BuildResponse
 )
 
 from app.recommendation_engine.build_generator import (
@@ -19,19 +21,14 @@ generator = BuildGenerator()
 
 @router.post(
     "/recommendations",
-    response_model=RecommendationResponse
+    response_model=List[BuildResponse]
 )
 def recommend_build(
     request: RecommendationRequest
 ):
 
-    build = generator.generate_build(
+    builds = generator.generate_builds(
         request.component
     )
 
-    return RecommendationResponse(
-        cpu=build.get("cpu"),
-        motherboard=build.get("motherboard"),
-        ram=build.get("ram"),
-        psu=build.get("psu")
-    )
+    return builds

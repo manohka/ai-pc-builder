@@ -3,8 +3,10 @@ from app.recommendation_engine.build_generator import BuildGenerator
 
 generator = BuildGenerator()
 
-build = generator.generate_build(
+builds = generator.generate_builds(
     "5060"
 )
 
-print(build)
+for build in builds:
+
+    print(build)
