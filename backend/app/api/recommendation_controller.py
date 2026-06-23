@@ -14,6 +14,10 @@ from app.recommendation_engine.build_generator import (
     BuildGenerator
 )
 
+from app.ai.explanation_service import (
+    ExplanationService
+)
+
 router = APIRouter()
 
 generator = BuildGenerator()
@@ -27,8 +31,20 @@ def recommend_build(
     request: RecommendationRequest
 ):
 
+    explanation_service = (
+        ExplanationService()
+    )
+
     builds = generator.generate_builds(
         request.component
     )
+
+    for build in builds:
+
+        build["explanation"] = (
+            explanation_service.explain(
+                build
+            )
+        )
 
     return builds

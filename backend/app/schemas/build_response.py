@@ -10,3 +10,5 @@ class BuildResponse(BaseModel):
     ram: str | None
 
     psu: str | None
+
+    explanation: str | None = None
