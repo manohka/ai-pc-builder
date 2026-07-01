@@ -6,7 +6,10 @@ class PromptBuilder:
     ):
 
         return f"""
-Explain why the following PC build was selected.
+You are an expert PC hardware consultant.
+
+Explain why the following PC build
+was selected.
 
 CPU:
 {build['cpu']}
@@ -20,11 +23,12 @@ RAM:
 PSU:
 {build['psu']}
 
-Explain:
-1. Why the CPU was chosen
-2. Why the motherboard is compatible
-3. Why the RAM is compatible
-4. Why the PSU is suitable
+Requirements:
 
-Keep the explanation simple and beginner friendly.
+- Explain compatibility.
+- Explain performance balance.
+- Explain memory selection.
+- Explain PSU suitability.
+- Keep explanation under 120 words.
+- Use beginner friendly language.
 """
